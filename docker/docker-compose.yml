@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  octo:
+    image: dang3r/octo:latest
+    restart: always
+    environment:
+      OCTO_SECRET: ${OCTO_SECRET}
+      TARGET_URL: ${TARGET_URL}
+    ports:
+      - "443:443"
